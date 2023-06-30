@@ -4,28 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        var myDate =new Date();
-        var myDay = myDate.getDay();
-        var myH1 = document.getElementById("y/n");
-        var myIcon = document.getElementById("icon");
-        var myTitle = document.getElementsByTagName("title");
-        // console.log(myDay)
-        window.onfocus=function(){
-            document.title="Is It Thursday ?";
-            if (myDay===4){
-                myH1.innerText="YES";
-                myIcon.href="smiling-face.png";
-            }
-            else{
-                myH1.innerText="NO";
-                myIcon.href="sad.png";
-            };
-        };
-        window.onblur = function(){
-            document.title = "Don't come again, bitch";
-            myIcon.href="angry.png";
-        };</script>
     <title></title>
     <link rel="icon" id="icon">
 </head>
@@ -34,11 +12,11 @@
     <hr>
     <div style="text-align: center;"><h2 id="y/n">YES</h2></div>
     <script>
-        // var myDate =new Date();
-        // var myDay = myDate.getDay();
-        // var myH1 = document.getElementById("y/n");
-        // var myIcon = document.getElementById("icon");
-        // var myTitle = document.getElementsByTagName("title");
+        var myDate =new Date();
+        var myDay = myDate.getDay();
+        var myH1 = document.getElementById("y/n");
+        var myIcon = document.getElementById("icon");
+        var myTitle = document.getElementsByTagName("title");
         // console.log(myDay)
         window.onfocus=function(){
             document.title="Is It Thursday ?";
